@@ -12,13 +12,16 @@ class TLCStudent(
                   year: Int = 2019,
                   val githubURL: String = "https://github.com/turntabl"
                 )
+  extends TurntablEmployee
 {
+
+  override val GetWorkload: String = "Works super hard"
 
   override def toString: String = s"Name: $firstName  $secondName ID: $ID Role Description: $role GITHUB: $githubURL"
 
-  def  yearsWithTurntabl() = Year.now().getValue - year
+  override def  termsOfService() = Year.now().getValue - year
 
-  def isSameTermOfService(s: TLCStudent) = yearsWithTurntabl() == s.yearsWithTurntabl()
+  def isSameTermOfService(s: TLCStudent) = termsOfService() == s.termsOfService()
 
   def TopGrade(subject : String, grade : Double) = Grade(subject, grade)
 

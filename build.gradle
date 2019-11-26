@@ -5,7 +5,7 @@ plugins {
 
 group 'io.turntabl'
 version '1.0-SNAPSHOT'
-mainClassName = 'io.turntabl.scalagettingstarted.MyApp'
+mainClassName = 'io.turntabl.oopscala.MyApp'
 
 sourceCompatibility = 1.8
 
@@ -18,3 +18,4 @@ dependencies {
     testImplementation 'org.scalatest:scalatest_2.11:3.0.0'
     testImplementation 'junit:junit:4.12'
 }
+
